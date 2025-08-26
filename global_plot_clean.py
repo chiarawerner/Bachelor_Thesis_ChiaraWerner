@@ -152,7 +152,7 @@ with open(os.path.join(plot_dir, "energy_medians_quartiles.txt"), "w") as f_out:
             ax.set_xlabel("Condition", fontsize=22)
             ax.set_ylabel("Transition Energy", fontsize=22)
             ax.set_xticks([0, 1])
-            ax.set_xticklabels(["2-back→0-back", "0-back→2-back"], fontsize=18)
+            ax.set_xticklabels(["0-back→2-back", "2-back→0-back"], fontsize=18)
 
             # Signifikanzsternchen
             p = pvals_energy.get(band, None)
